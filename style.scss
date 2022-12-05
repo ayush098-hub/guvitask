@@ -1,0 +1,110 @@
+$color_1: crimson;
+$color_2: #fff;
+$font-family_1: 'Poppins', sans-serif;
+$background-color_1: #eee;
+$background-color_2: #000;
+$background-color_3: crimson;
+$background-color_4: #fff;
+
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap";
+* {
+	font-family: $font-family_1;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	text-decoration: none;
+}
+.container {
+	min-height: 100vh;
+	background-color: $background-color_1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding-bottom: 80px;
+	.content {
+		width: 700px;
+		h3 {
+			text-transform: uppercase;
+			font-size: 5vw;
+		}
+		p {
+			font-size: 20px;
+			padding: 10px 0;
+			span {
+				color: $color_1;
+			}
+		}
+		.logout {
+			display: inline-block;
+			padding: 10px 35px;
+			font-size: 20px;
+			margin-top: 10px;
+			background-color: $background-color_2;
+			color: $color_2;
+			&:hover {
+				background-color: $background-color_3;
+			}
+		}
+	}
+}
+.form-container {
+	min-height: 100vh;
+	background-color: $background-color_1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding-bottom: 80px;
+	form {
+		width: 500px;
+		background-color: $background-color_4;
+		border: 2px solid #000;
+		padding: 20px;
+		text-align: center;
+		.title {
+			font-size: 25px;
+			text-transform: uppercase;
+			margin-bottom: 10px;
+		}
+		.box {
+			width: 100%;
+			padding: 12px 14px;
+			font-size: 20px;
+			text-transform: none;
+			border: 2px solid #000;
+			margin: 10px 0;
+		}
+		.form-btn {
+			display: block;
+			width: 100%;
+			font-size: 20px;
+			padding: 10px;
+			background-color: $background-color_2;
+			color: $color_2;
+			cursor: pointer;
+			margin: 10px 0;
+			&:hover {
+				background-color: $background-color_3;
+			}
+		}
+		p {
+			font-size: 20px;
+			margin-top: 20px;
+			a {
+				color: $color_1;
+			}
+		}
+		.error-msg {
+			display: block;
+			width: 100%;
+			padding: 10px 0;
+			margin: 10px 0;
+			background-color: $background-color_3;
+			font-size: 20px;
+			color: $color_2;
+		}
+	}
+}
